@@ -1,4 +1,4 @@
-# acme-cloud-provisioning-ee
+# parasol-cloud-provisioning-ee
 
 Cloud infrastructure provisioning EE for AWS, Azure, and GCP
 
@@ -19,7 +19,7 @@ Cloud infrastructure provisioning EE for AWS, Azure, and GCP
 
 - **Tags:** `execution-environment`
 
-- **Image registry:** `52.21.70.135/acme-cloud-provisioning-ee:v1.0.0`
+- **Image registry:** `52.21.70.135/parasol-cloud-provisioning-ee:v1.0.0`
 
 ## Use this execution environment
 
@@ -30,7 +30,7 @@ Log in to the registry and pull the image:
 
 ```bash
 podman login 52.21.70.135
-podman pull 52.21.70.135/acme-cloud-provisioning-ee:v1.0.0
+podman pull 52.21.70.135/parasol-cloud-provisioning-ee:v1.0.0
 ```
 
 If the registry uses a self-signed certificate, you may need to append `--tls-verify=false` to each `podman` command.
@@ -38,13 +38,13 @@ If the registry uses a self-signed certificate, you may need to append `--tls-ve
 To use it in Ansible Automation Platform:
 
 1. Go to **Automation Execution** > **Infrastructure** > **Execution Environments**.
-2. Click **Create execution environment** and enter the image URL: `52.21.70.135/acme-cloud-provisioning-ee:v1.0.0`
+2. Click **Create execution environment** and enter the image URL: `52.21.70.135/parasol-cloud-provisioning-ee:v1.0.0`
 3. Select this execution environment in your job templates.
 
 ## Build details
 
 - **Base image:** `registry.redhat.io/ansible-automation-platform/ee-minimal-rhel8:2.18`
-- **Definition file:** `acme-cloud-provisioning-ee.yml`
-- **Template file:** `acme-cloud-provisioning-ee-template.yml` - import this into Ansible automation portal to let others create EEs from the same starting point.
+- **Definition file:** `parasol-cloud-provisioning-ee.yml`
+- **Template file:** `parasol-cloud-provisioning-ee-template.yml` - import this into Ansible automation portal to let others create EEs from the same starting point.
 
 To make changes, use this EE's template in Ansible automation portal or rebuild manually with `ansible-builder` and the definition file.
