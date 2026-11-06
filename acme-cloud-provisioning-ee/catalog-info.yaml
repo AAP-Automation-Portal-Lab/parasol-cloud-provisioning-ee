@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: acme-cloud-provisioning-ee
+  description: Cloud infrastructure provisioning EE for AWS, Azure, and GCP
+  tags:
+    - execution-environment
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/managed-by-location: github.com?repo=acme-cloud-provisioning-ee&owner=Automation-Portal-ACME
+    ansible.io/scm-provider: github
+    backstage.io/source-template: template:default/ansible-execution-environment-builder-cloud-automation
+spec:
+  type: execution-environment
+  owner: user:default/clouduser1
+  lifecycle: production
