@@ -2,8 +2,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: acme-cloud-provisioning-ee
-  title: acme-cloud-provisioning-ee
+  name: parasol-cloud-provisioning-ee
+  title: parasol-cloud-provisioning-ee
   description: "Cloud infrastructure provisioning EE for AWS, Azure, and GCP"
   annotations:
     ansible.io/saved-template: 'true'
