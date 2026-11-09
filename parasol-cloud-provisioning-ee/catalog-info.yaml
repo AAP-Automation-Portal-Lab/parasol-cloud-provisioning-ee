@@ -12,5 +12,5 @@ metadata:
     backstage.io/source-template: template:default/ansible-execution-environment-builder-cloud-automation
 spec:
   type: execution-environment
-  owner: user:default/clouduser1
+  owner: user:default/admin
   lifecycle: production
